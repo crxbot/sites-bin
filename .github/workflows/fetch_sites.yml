@@ -16,7 +16,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v7
         with:
-          token: ${{ secrets.LIVE_PAT }}
+          token: ${{ secrets.DWD_PAT }}
 
       - name: Setup Python
         uses: actions/setup-python@v7
@@ -42,4 +42,4 @@ jobs:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           SITES_R2_PREFIX: sites/radar
-          SITES_MAX_KEEP: "6"
+          SITES_MAX_KEEP: "6"
